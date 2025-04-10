@@ -1,0 +1,619 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+/* HTML Page */
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica", "Arial";
+}
+
+a {
+    text-decoration: none;
+    color: rgb(52, 133, 226);
+}
+
+/* Navbar Styles */
+
+nav {
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6vh;
+    /* 5vh */
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+
+@keyframes slideDownFade {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  nav {
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6vh;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+  
+    /* Animation */
+    animation: slideDownFade 0.8s ease-out forwards;
+  }
+  
+  @keyframes reGlow {
+    0% {
+      background-color: rgba(22, 22, 22, 0.6);
+    }
+    50% {
+      background-color: rgba(22, 22, 22, 0.9);
+    }
+    100% {
+      background-color: rgba(22, 22, 22, 0.8);
+    }
+  }
+  
+  nav:hover,
+  nav:active {
+    animation: reGlow 0.4s ease-in-out;
+  }
+  
+
+
+
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    padding: 12px;
+}
+
+.navicon {
+    margin-left: 25px;
+}
+
+.navlink {
+    margin-inline: 15px;
+    color: #d3d3d3;
+}
+
+.responsivediv {
+    display: flex;
+}
+
+.respnavbar {
+    display: none;
+}
+
+.applelogo {
+    margin-inline: 25px;
+    margin-top: -2.9px;
+}
+
+/* The info box below the Navbar */
+
+.infobartext {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.infobar {
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main page - 1 -> iPhone 14 Pro */
+
+.mainpage1 {
+    background-image: url("https://www.apple.com/in/home/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_largetall.jpg");
+    /* background-image: url("Images/pro8.jpg");  */
+    height: 588px;
+    background-position: center -35px;
+    background-position-x: center;
+}
+
+.mp1-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.mp1-title1 {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .mp1-title1 {
+    animation: fadeSlideUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+  }
+  
+  .mp1-title2 {
+    animation: fadeSlideUp 1s ease-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+  }
+  
+
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .mp2-title1 {
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+  }
+  
+  .mp2-desc:nth-of-type(2) {
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+  
+  .mp2-desc:nth-of-type(3) {
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
+  
+
+
+
+
+
+.mp1-title2 {
+    font-size: 25px;
+}
+
+.mainpagelink {
+    font-size: 20px;
+}
+
+/* Main page - 2 -> iPhone 14 */
+
+.mainpage2 {
+    background-image: url("https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_yellow__eun20sn4imi6_largetall.jpg");
+    background-position-x: center;
+    height: 82vh;
+    width: 100vw;
+}
+
+.mp-default-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(34, 34, 34);
+    line-height: 30px;
+}
+
+.mp2-title1 {
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.mp2-desc {
+    font-size: 23px;
+}
+
+.mainpagelink {
+    font-size: 20px;
+}
+
+/* Main page - 3 -> Apple watch */
+
+.mainpage3 {
+    background-image: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_largetall.jpg");
+    height: 78vh;
+    background-position-x: center;
+}
+
+.mp3desc {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Main page - 4 -> grid items */
+
+.mainpage4 {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    flex-basis: 49%;
+    margin: 5px;
+}
+
+.applewatchlogo {
+    margin-top: 60px;
+}
+
+.applewatchcontainer {
+    margin-top: 50px;
+}
+
+.motherday {
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    width: 350px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.motherday2 {
+    margin-top: 10px;
+    width: 250px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.promo1 {
+    background-image: url("https://www.apple.com/v/home/az/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_large.jpg");
+    background-position-x: center;
+    height: 560px;
+
+}
+
+.promo2 {
+    background-image: url("https://www.apple.com/v/home/az/images/promos/wwdc23-announce/promo_wwdc23__b68ptht3mro2_large.jpg");
+    background-position-x: center;
+    height: 560px;
+}
+
+.promo3 {
+    background-image: url("https://www.apple.com/v/home/az/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg");
+    background-position-x: center;
+    height: 560px;
+}
+
+.promo4 {
+    background-image: url("https://www.apple.com/v/home/az/images/promos/macbook-pro-14-and-16/promo_mbp__ek7p477bkp6q_large.jpg");
+    background-position-x: center;
+    height: 560px;
+}
+
+.promo5 {
+    background-image: url("https://www.apple.com/v/home/az/images/promos/mothers-day-2023/airpods/promo__sw58lbodkmqq_large.jpg");
+    background-position-x: center;
+    height: 560px;
+}
+
+.promo6 {
+    background-image: url("https://www.apple.com/in/home/promos/apple-watch-ultra/images/promo_apple_watch_ultra__gnsqulvdc4a6_large.jpg");
+    background-position-x: center;
+    height: 560px;
+}
+
+#ipadtitle {
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#mactitle {
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+#macdescription {
+    margin-top: 10px;
+    color: white;
+    font-size: 19px;
+}
+
+.appletradein {
+    margin-top: 50px;
+}
+
+.wwdc23 {
+    margin-top: 350px;
+}
+
+.wwdc23text {
+    color: white;
+}
+
+/* Footer  */
+
+footer {
+    background-color: rgb(243, 243, 243);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footertext1 {
+    margin: 25px;
+    width: 820px;
+    font-size: 13px;
+    color: rgb(71, 71, 71);
+}
+
+
+
+
+
+
+
+
+/* support */
+.support-hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background: #f5f5f7;
+  }
+  .support-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .support-hero p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .support-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    color: #0071e3;
+    text-decoration: none;
+  }
+  .support-info {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .support-info button {
+    padding: 10px 20px;
+    background-color: #0071e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .support-info button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  
+
+  /* mac */
+  .mac-hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background: #f5f5f7;
+  }
+  .mac-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .mac-hero p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .mac-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    color: #0071e3;
+    text-decoration: none;
+  }
+  .mac-info {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .mac-info button {
+    padding: 10px 20px;
+    background-color: #0071e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .mac-info button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+
+  /* store */
+
+  /* tv-home */
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background: #1f2937;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.nav__list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav__list a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.tv-hero {
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+  
+}
+
+.tv-hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tv-hero p {
+  font-size: 1.2rem;
+}
+
+/* Products */
+.products {
+  padding: 60px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.products h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #1f2937;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tv-hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .product-grid {
+    flex-direction: column;
+  }
+}

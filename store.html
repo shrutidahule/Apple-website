@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .store-hero {
+      background: url('images/store-banner.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(32, 31, 31);
+      font-size: 2.5rem;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    .store-section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .store-products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Apple Online Store</h1>
+  </header>
+
+  <section class="store-hero">
+    Shop the latest. Fast & easy.
+  </section>
+
+  <section class="store-section">
+    <h2>Featured Products</h2>
+    <div class="store-products">
+      <div class="product-card">
+        <img src="Images/pro1.png" alt="MacBook">
+        <h3>MacBook Air M2</h3>
+        <p>Powerful. Lightweight. Stunning display.</p>
+      </div>
+      <div class="product-card">
+        <img src="Images/pro2.jpg" alt="iPhone">
+        <h3>iPhone 15 Pro</h3>
+        <p>Pro camera system. Titanium design.</p>
+      </div>
+      <div class="product-card">
+        <img src="Images/pro3.jpg" alt="iPad">
+        <h3>iPad Pro</h3>
+        <p>Powerful performance in a sleek body.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Apple Inc. All rights reserved.
+  </footer>
+
+</body>
+</html>
